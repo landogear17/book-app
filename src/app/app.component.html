@@ -1,14 +1,22 @@
-<div>
-  <h2>Book App</h2>
-  <img alt="Capybara logo" src="/public/Capybara.png" class="img-capy-logo">
+<div id = "all">
+  <header>
+    <h2>Welcome to the Book App</h2>
+  </header>
+  
+  <img alt="Capybara logo" src="assets/Capybara.png" class="img-capy-logo">
 
   <!-- Display a welcome message -->
-  <app-main-page msg="Welcome to your reading journey!"></app-main-page>
+  <app-main-page></app-main-page>
 
-  <router-outlet></router-outlet>
+  <br>
+  <br>
+
+  <!--<router-outlet></router-outlet>-->
 
   <!-- Book creation form -->
   <app-book-create (bookCreated)="addBook($event)"></app-book-create>
+
+  <br>
 
   <!-- Button to toggle book list -->
   <button class="button-spacing" (click)="toggleBookList()">
@@ -22,6 +30,6 @@
   <br />
   <div class="container">
     <p class="text-f">Developed by Natalia Herrera and Paulo Enrique. All rights reserved.</p>
-    <img alt="Angular logo" src="/public/logo.png">
+    <img alt="Angular logo" src="assets/logo.png" class = "img-angular-logo">
   </div>
 </div>
